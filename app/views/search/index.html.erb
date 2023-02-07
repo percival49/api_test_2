@@ -1,0 +1,6 @@
+<%= form_with url:'/api/search', action: 'get' do |f| %>
+  <%= f.text_field :query %>
+  <%= f.submit :search %>
+<% end %>
+
+<%= @result %>
